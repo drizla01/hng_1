@@ -9,11 +9,11 @@ def get_info(request):
     if not slack_name or not track:
         return JsonResponse({"error":"Both slack name and track must be provided"}, status=400)
     
-    response_data = { "slack_name": "example_name",
-  "current_day": "Monday",
-  "utc_time": "2023-08-21T15:04:05Z",
+    response_data = { "slack_name": "awal_umar",
+  "current_day": "Wednesday",
+  "utc_time": "2023-09-21T15:04:05Z",
   "track": "backend",
-  "github_file_url": "https://github.com/username/repo/blob/main/file_name.ext",
-  "github_repo_url": "https://github.com/username/repo",
-  “status_code”: “200”
+  "github_file_url": "https://github.com/drizla01/hng_1/blob/main/file_name.ext",
+  "github_repo_url": "https://github.com/drizla01/hng_1",
+  "status_code": 200
   }
