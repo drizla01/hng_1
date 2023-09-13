@@ -4,8 +4,8 @@ from django.http import HttpResponseBadRequest
 
 def get_info(request):
     #the get query from url
-    slack_name = request.GET.get("oyakhire22")
-    track = request.GET.get("backend")
+    slack_name = request.GET.get("slack_name")
+    track = request.GET.get("track")
 
     #to confirm that the query are provided
     if not slack_name or not track:
